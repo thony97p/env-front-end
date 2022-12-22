@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_caracts_caracteristiques",
+  "info": {
+    "displayName": "caracteristiques",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cpu": {
+      "type": "string"
+    },
+    "ROM_in_GB": {
+      "type": "integer",
+      "min": 0
+    },
+    "RAM_in_GB": {
+      "type": "integer",
+      "min": 0
+    },
+    "nb_of_lenses": {
+      "type": "integer"
+    },
+    "camera_mp": {
+      "type": "string"
+    },
+    "WiFi": {
+      "type": "boolean"
+    },
+    "Bluetooth": {
+      "type": "boolean"
+    },
+    "NFC": {
+      "type": "boolean"
+    },
+    "N_5G": {
+      "type": "boolean"
+    },
+    "USB_C": {
+      "type": "boolean"
+    },
+    "jack": {
+      "type": "boolean"
+    }
+  }
+}

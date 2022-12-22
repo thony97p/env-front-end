@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_addresse_adresses",
+  "info": {
+    "displayName": "adresse",
+    "icon": "compass",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rue": {
+      "type": "string"
+    },
+    "rue2": {
+      "type": "string"
+    },
+    "n_rue": {
+      "type": "integer"
+    },
+    "cp": {
+      "required": true,
+      "type": "integer"
+    },
+    "ville": {
+      "type": "string"
+    }
+  }
+}

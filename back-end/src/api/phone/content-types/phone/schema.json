@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "phones",
+  "info": {
+    "singularName": "phone",
+    "pluralName": "phones",
+    "displayName": "phone",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "marque": {
+      "type": "string"
+    },
+    "modele": {
+      "type": "string"
+    },
+    "caracteristiques": {
+      "displayName": "caracteristiques",
+      "type": "component",
+      "repeatable": false,
+      "component": "caracts.caracteristiques"
+    },
+    "year": {
+      "type": "integer",
+      "min": 2000
+    }
+  }
+}
