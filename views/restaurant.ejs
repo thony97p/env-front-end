@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <%= data.data.attributes.name %>
+        </h1>
+    </header>
+    <main>
+        <a href="/">Accueil</a>
+        <p>
+            Note : <%= data.data.attributes.rate %><br>
+                Sur place :
+                <% if (data.data.attributes.onSite) { %>
+                    Oui<br>
+                    <% } else { %>
+                        Non<br>
+                        <% } %>
+                            À emporter :
+                            <% if (data.data.attributes.takeaway) { %>
+                                Oui<br>
+                                <% } else { %>
+                                    Non<br>
+                                    <% } %>
+        </p>
+        <address>
+            <% if (data.data.attributes.address.number!=null) { %>
+                <%= data.data.attributes.address.number %>,
+                    <% } %>
+                        <%= data.data.attributes.address.street %><br>
+                            <%= data.data.attributes.address.ZIP %>
+                                <%= data.data.attributes.address.city %>
+        </address>
+    </main>
+</body>
+
+</html>
